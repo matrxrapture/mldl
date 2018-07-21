@@ -8,7 +8,6 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 melb_target = melb_data.Price
-
 melb_predictors = melb_data.drop(['Price'], axis=1)
 
 # For the sake of keeping the example simple, we'll use only numeric predictors. 
