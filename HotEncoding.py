@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 
 def get_mae(X, y):
-    # multiple by -1 to make positive MAE score instead of neg value returned as sklearn convention
+    #multiple by -1 to make positive MAE score instead of neg value returned as sklearn convention
     return -1 * cross_val_score(RandomForestRegressor(50),
                                 X, y,
                                 scoring='neg_mean_absolute_error').mean()
